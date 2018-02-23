@@ -85,6 +85,9 @@ is_native_executable ${HOLE_EXE} ${OFORMAT} || \
     { file ${HOLE_EXE}; \
       die "${HOLE_EXE} will not run on ${OSNAME} (object format ${OFORMAT})" 3; }
 
+# rm build artifacts (looks confusing in binder)
+rm -f "${TARFILE}"
+
 echo "HOLE executables were installed into ${MDA_HOLE_BINDIR}"
 echo ">>> "
 
