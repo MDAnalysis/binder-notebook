@@ -3,8 +3,8 @@ channels:
     - defaults
 dependencies:
     - matplotlib
-    - mdanalysis>=1.0.0
-    - mdanalysistests>=1.0.0
+    - mdanalysis>=1.1.1
+    - mdanalysistests>=1.1.1
     - mdanalysisdata
     - nglview
     
